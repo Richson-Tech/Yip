@@ -1,0 +1,17 @@
+.queue {
+    max-height: 100px;
+    /* background-color: gray; */
+}
+
+table, td {
+    border: 1px solid black;
+    width: 800px;
+    margin: 25px auto;
+}
+
+th {
+    border: 2px solid black;
+}
+.empty {
+    border: 1px solid black;
+}

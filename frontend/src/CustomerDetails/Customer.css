@@ -1,0 +1,25 @@
+.customer {
+    max-height: 800px;
+    /* background-color: aqua; */
+}
+
+table {
+    /* border: 1px solid black; */
+    width: 1200px;
+    margin: 25px auto;
+    
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: none;
+}
+
+caption {
+    color: aqua;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
