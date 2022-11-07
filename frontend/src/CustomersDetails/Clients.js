@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import './Customer.css';
+import './Clients.css';
 // import { Container } from "react-bootstrap";
 
 
@@ -31,8 +31,8 @@ const Customer = () => {
                                 <tr className='table_header'>
                                     <th>ID</th>
                                     <th>Name</th>
-                                    <th>Pick Up Location</th>
-                                    <th>Drop Off Location</th>
+                                    <th>The Pick Up Location</th>
+                                    <th>The Drop Off Location</th>
                                 </tr>
                             </thead>
                             <tbody className='table_body'>

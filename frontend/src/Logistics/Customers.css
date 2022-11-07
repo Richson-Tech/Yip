@@ -1,0 +1,77 @@
+.logistics{
+    font-size: 95px;
+    color: blueviolet;
+    font-family: 🇩🇿 ;
+}
+
+.card-header{
+    font-size: 75px;
+    font-family: 🇿🇼 ;
+    padding-bottom: 70px;
+    color: white;
+}
+
+
+.form-control{
+  width: 500px;
+  height: 50px;  
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0 10px 10px #666;
+  outline: none;
+  background-color: white;
+  color: black;
+  
+}
+
+.form-control-second{
+    width: 500px;
+    height: 50px; 
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 10px 10px #666;
+    outline: none;
+    background-color: white;
+  color: black;
+}
+.form-control:hover {
+    cursor: pointer;
+}
+
+.form-control-second:hover {
+    cursor: pointer;
+}
+
+.button{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px; 
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    background-color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* .button:hover {
+    color: white;
+    background-color: blueviolet;
+    transition-duration: 1s;
+} */
+
+.card-body {
+    display: flex;
+}
+.select1 {
+    width: 800px;
+    padding: 5px;
+    
+}
+.select2 {
+    width: 800px;
+    padding: 5px;
+    
+}

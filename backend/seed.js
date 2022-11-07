@@ -1,43 +1,43 @@
 const mysql = require('mysql2/promise');
-const dotenv = require ('dotenv');
+const dotenv = require('dotenv');
 
 dotenv.config();
 
 const customers = [
     {
-        name: 'Musa',
-        pickupLocation: 'Agege',
-        dropOffLocation: 'Oshodi'
-    },
-    {
-        name: 'John',
+        name: 'Select Customers',
         pickupLocation: 'Ikeja',
         dropOffLocation: 'Lekki'
     },
     {
-        name: 'Victoria',
-        pickupLocation: 'VI',
-        dropOffLocation: 'Ikeja'
+        name: 'Elon',
+        pickupLocation: 'California',
+        dropOffLocation: 'Texas'
     },
     {
-        name: 'Lexy',
-        pickupLocation: 'Lekki',
-        dropOffLocation: 'Egbeda'
+        name: 'Mariam',
+        pickupLocation: 'Ikorodu',
+        dropOffLocation: 'Badagry'
     },
     {
-        name: 'Francis',
-        pickupLocation: 'Egbeda',
-        dropOffLocation: 'Oshodi'
-    },
-    {
-        name: 'Chidi',
-        pickupLocation: 'Egbeda',
-        dropOffLocation: 'Berger'
-    },
-    {
-        name: 'Mary',
+        name: 'Yinka',
         pickupLocation: 'Agege',
-        dropOffLocation: 'Ikeja'
+        dropOffLocation: 'Ikorodu'
+    },
+    {
+        name: 'Azeez',
+        pickupLocation: 'Badagry',
+        dropOffLocation: 'Epe'
+    },
+    {
+        name: 'Rihana',
+        pickupLocation: 'Alabama',
+        dropOffLocation: 'New York'
+    },
+    {
+        name: 'Hapiness',
+        pickupLocation: 'Victoria Island',
+        dropOffLocation: 'Lekki'
     }
 ]
 
@@ -53,17 +53,20 @@ const seed = async () => {
 
     const deleteDeliveryQuery = `delete from Delivery_Queue`;
     const deleteCustomersQuery = `delete from Customers`;
+
     await connection.query(deleteDeliveryQuery);
     await connection.query(deleteCustomersQuery);
 
+    for (let i = 0; i < customers.length; i++) {
+        const customer = customers[i]
 
-    for (const customer of customers) {
         const { name, pickupLocation, dropOffLocation } = customer
 
         const query = 'insert into Customers(name, pickupLocation, dropOffLocation) values (? , ?, ?)'
         await connection.query(query, [name, pickupLocation, dropOffLocation])
 
     }
+
 
     await connection.end();
 
